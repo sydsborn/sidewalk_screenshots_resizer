@@ -1,7 +1,6 @@
 #imports
 from pathlib import Path
 from PIL import Image
-import matplotlib.pyplot as plt
 
 #directory strings
 image_directory = 'source'
