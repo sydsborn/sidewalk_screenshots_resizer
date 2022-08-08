@@ -13,11 +13,11 @@ image_paths_list = list(image_paths)
 
 for image_path in image_paths_list:
     image = Image.open(image_path)
-    image1 = image.convert(RGB)
+    image1 = image.convert('RGB')
     
     #change extension to JPG
     image_name = image_path.name
-    image_name1 = image_name.rename(image_name.withsuffix('.jpg'))
+    image_name1 = image_name.replace("png","jpg")
     output_path = Path(image_directory).joinpath(image_name1)
     image2 = image1.save(output_path, compression='group4')
 
