@@ -28,5 +28,5 @@ for image_path in image_paths_list:
     image = Image.open(image_path)
     im1 = image.resize((852,480))
     image_name = image_path.name
-    output_path = Path('result').joinpath(image_name)
+    output_path = Path(result_directory).joinpath(image_name)
     im2 = im1.save(output_path, compression='group4')
